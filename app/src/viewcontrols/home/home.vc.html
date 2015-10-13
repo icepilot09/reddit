@@ -1,1 +1,10 @@
-<h1>Hello World!</h1>
+<h1>Reddit Showerthoughts!</h1>
+<plat-foreach plat-context="posts">
+    <div class="post">
+        <h2>{{data.title}}</h2>
+        <div class="info">
+            <span class="author">{{data.author}}</span>
+        </div>
+        <p class="content">{{data.url}}</p>
+    </div>
+</plat-foreach>
