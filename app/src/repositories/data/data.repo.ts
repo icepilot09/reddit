@@ -7,16 +7,10 @@ export default class DataRepository extends BaseRepository {
         super();
     };
     
-    posts: Array<any> = [];
+    //posts: Array<any>;
     getPosts(): async.IThenable<Array<models.IPost>>{
-        return this.redditSvc.getPosts().then((results)=>{
-            results.forEach((result) => {
-                this.posts.push(result);
-            });
-            return this.posts
-        });
-    };
-}
-
+        return this.redditSvc.getPosts();
+            };
+ };
 
 register.injectable('data-repo', DataRepository, [RedditService]);
