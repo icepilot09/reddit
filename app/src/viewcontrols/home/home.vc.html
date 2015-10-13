@@ -1,6 +1,9 @@
 <h1>Reddit!</h1>
 <plat-foreach plat-context="posts">
     <div class="post">
+        <!--ng-click in h2 to redirect to url showDetail(...) . add $location to controller.  
+        $scope.showDetails = function(...){$location.path ('/details/')};
+        -->
         <h2>{{data.title}}</h2>
         <div class="info">
             <span class="author">{{data.author}}</span>
