@@ -8,7 +8,7 @@ export default class MyApp extends App {
 
         router.configure([
             { pattern: '', view: HomeViewControl },
-            { pattern: '/r', view: ReadViewControl }
+            { pattern: '/details/:id', view: ReadViewControl }
         ]);
     };
 

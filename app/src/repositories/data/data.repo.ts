@@ -7,6 +7,7 @@ export default class DataRepository extends BaseRepository {
         super();
     };
     
+    
     //posts: Array<any>;
     getPosts(): async.IThenable<Array<models.IPost>>{
         return this.redditSvc.getPosts();

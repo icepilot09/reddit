@@ -3,8 +3,10 @@
     <div class="post">
         <!--ng-click in h2 to redirect to url showDetail(...) . add $location to controller.  
         $scope.showDetails = function(...){$location.path ('/details/')};
+        
+        showDetail(reddit:id)
         -->
-        <h2>{{data.title}}</h2>
+        <h2 plat-tap="showDetail(data.id)">{{data.title}}</h2>
         <div class="info">
             <span class="author">{{data.author}}</span>
         </div>
