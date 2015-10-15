@@ -10,12 +10,12 @@ export default class MyApp extends App {
             { pattern: '', view: HomeViewControl },
             { pattern: '/details/:id', view: ReadViewControl }
         ]);
-    };
+    }
 
     error(ev: events.ErrorEvent<Error>): void {
         console.log(ev.error);
-    };
-};
+    }
+}
 
 register.app('app', MyApp, [
     routing.Router
