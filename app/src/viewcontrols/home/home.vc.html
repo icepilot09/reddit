@@ -1,14 +1,14 @@
-
-<h1>Reddit!</h1>
-
-
-<plat-foreach plat-context="posts">
-   <div class="post">
-       <h2 plat-tap="readPost(id)"> {{title}}</h2>
-       <div class="info">
-           <span class="author">{{author}}</span>
-           <p class="content">{{url}}</p>
-       </div>
-   </div>
-</plat-foreach>
-
+<div class="container">
+    <h1 class="title">Reddit!</h1>
+    <body>
+        <plat-foreach plat-context="posts">
+            <div class="post">
+                <h2 plat-tap="readPost(id)"> {{title}}</h2>
+                <div class="info">
+                    <span class="author">Posted By: {{author}}</span>
+                    <!--<p class="content">{{url}}</p>-->
+                </div>
+            </div>
+        </plat-foreach>
+    </body>
+</div>
