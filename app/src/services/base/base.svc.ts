@@ -1,5 +1,5 @@
 import {async, Utils} from 'platypus';
-import {async, Utils} from 'platypus';
+
 
 export default class BaseService {
     protected static _inject: any = {
@@ -12,5 +12,5 @@ export default class BaseService {
     protected Promise: async.IPromise;
     protected utils: Utils;
 
-   host: string = 'https://www.reddit.com/r/funny.json';
+   host: string = 'https://www.reddit.com/r/funny/.json';
 }
